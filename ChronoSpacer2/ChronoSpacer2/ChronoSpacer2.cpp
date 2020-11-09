@@ -30,7 +30,7 @@ int main()
     // Initialise everything below
     sf::CircleShape circle; // Déclaration de "circle" (sans affectation)
     circle.setRadius(100.0f); // Appel de méthode qui travaille sur "circle"
-    circle.setFillColor(sf::Color::Red);
+    circle.setFillColor(sf::Color::Blue);
     // Game loop
     while (window.isOpen()) {
         sf::Event event;
