@@ -28,11 +28,12 @@ int main()
     std::cout << "Hello World!\n";
     sf::RenderWindow window(sf::VideoMode(800, 600), "ChronoSpacer");
     // Initialise everything below
-    sf::CircleShape circle; // Déclaration de "circle" (sans affectation)
-    circle.setRadius(100.0f); // Appel de méthode qui travaille sur "circle"
-    circle.setFillColor(sf::Color::Blue);
+ 
+
     // Game loop
     while (window.isOpen()) {
+      
+      
         sf::Event event;
         while (window.pollEvent(event)) {
             // Process any input event here
@@ -40,9 +41,10 @@ int main()
                 window.close();
             }
         }
+      
         window.clear();
         // Whatever I want to draw goes here
-        window.draw(circle);
+       
         window.display();
     }
     
